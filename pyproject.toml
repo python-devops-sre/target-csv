@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "target-csv"
+version = "0.3.2"
+description = "Singer.io target for writing CSV files"
+authors = ["Stitch"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jsonschema = "^4.23.0"
+setuptools = "^70.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+singer-python = {git = "https://github.com/python-devops-sre/singer-python.git", rev = "master"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
